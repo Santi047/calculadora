@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Estilos comunes para ambos modos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #fff;
+    --secondary-color: #f6f6f6;
+    --font-titles: 70px;
+    --font-subtitles: 32px;
+    --primary-trip: font-family: "Lora", serif;
+    --secondary-trip: font-family: "Poppins", sans-serif;
+}
+
+#cont-general {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cont-calculadora {
+    width: 500px;
+    height: 700px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--secondary-color); /* Fondo comÃºn */
+}
+
+#cont-escritura {
+    width: 100%;
+    padding: 20px;
+}
+
+#cont-escritura input {
+    width: 100%;
+    font-size: var(--font-titles);
+}
+
+#cont-botones {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.btn {
+    width: 22%;
+    padding: 20px;
+    font-size: var(--font-subtitles);
+    margin-bottom: 20px;
+    border: none; /* Quitamos el borde original */
+    background-color: var(--secondary-color); /* Fondo comÃºn */
+    box-shadow: 5px 5px 10px #bebebe,
+                -5px -5px 10px #ffffff; /* Neumorfismo */
+    transition: all 0.3s ease; /* TransiciÃ³n suave */
+}
+
+.btn.doble {
+    width: 48%;
+}
+
+/* Pseudo-clases para el efecto de "presionado" */
+.btn:active {
+    box-shadow: inset 5px 5px 10px #bebebe,
+                inset -5px -5px 10px #ffffff;
+}
+
+/* Estilos especÃ­ficos para el modo noche */
+.modo-noche {
+    background-color: #333;
+    color: #333;
+}
+
+.modo-noche #cont-calculadora {
+    border-color: #666;
+    background-color: #222; /* Fondo diferente para modo noche */
+}
+
+.modo-noche .btn {
+    background-color: #222; /* Fondo diferente para modo noche */
+    color: #fff;
+}

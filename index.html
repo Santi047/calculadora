@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome para los íconos -->
+</head>
+<body class="modo-dia"> <!-- Por defecto, asumimos que estamos en modo día -->
+    <section id="cont-general">
+        <div id="cont-calculadora">
+            <div id="cont-escritura">
+                <input id="pantalla" type="text">
+            </div>
+            <div id="cont-botones">
+                <!-- fila1 -->
+                <button id="ac" class="btn">AC</button>
+                <button id="borrar" class="btn">b</button>
+                <button class="btn" id="porcentaje">%</button>
+                <button id="dividir" class="btn">/</button>
+                <!-- fila 2 -->
+                <button id="siete" class="btn">7</button>
+                <button id="ocho" class="btn">8</button>
+                <button id="nueve" class="btn">9</button>
+                <button id="multiplicar" class="btn">*</button>
+                <!-- fila 3 -->
+                <button id="cuatro" class="btn">4</button>
+                <button id="cinco" class="btn">5</button>
+                <button id="seis" class="btn">6</button>
+                <button id="restar" class="btn">-</button>
+                <!-- fila 4 -->
+                <button id="uno" class="btn">1</button>
+                <button id="dos" class="btn">2</button>
+                <button id="tres" class="btn">3</button>
+                <button id="sumar" class="btn">+</button>
+                <!-- fila 5 -->
+                <button id="cero" class="btn doble">0</button>
+                <button id="punto" class="btn">.</button>
+                <button id="igual" class="btn">=</button>
+
+            </div>
+            <button id="cambiar-modo" class="btn">
+                <i id="icono-modo" class="fas fa-sun"></i> <!-- Por defecto, asumiremos que estamos en modo día -->
+            </button>
+        </div>
+    </section>
+    <script src="js/calculadora.js"></script>
+</body>
+</html>
